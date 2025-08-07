@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    .page-border {
+      border: 30px solid gray;
+      width: 1260px; 
+      margin: 0 auto;
+      padding: 0;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      background-color: white;
+      padding: 20px;
+      width: 1200px;
+      margin: 0 auto;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      
+    }
+
+    .header h2 {
+      font-size: 24px;
+      color: #003B49;
+    }
+
+    .header-right {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      margin-left: auto;
+    }
+
+    .list {
+      display: flex;
+      gap: 25px;
+      font-size: 14px;
+      color: #333;
+      list-style: none;
+    }
+
+    .search-box {
+      display: flex;
+      align-items: center;
+      border: 2px solid #ccc;
+      border-radius: 999px;
+      padding: 8px 15px;
+      background-color: white;
+      width: 250px;
+    }
+
+    .search-box i {
+      font-size: 18px;
+      color: #555;
+      margin-right: 10px;
+    }
+
+    .search-box input {
+      border: none;
+      outline: none;
+      font-size: 15px;
+      color: #555;
+      background-color: transparent;
+      flex: 1;
+    }
+
+    .icon-group {
+      display: flex;
+      gap: 20px;
+      font-size: 18px;
+    }
+
+    .icon1, .icon2, .icon3 {
+      border: 1px solid rgb(188, 184, 184);
+      border-radius: 50%;
+      font-size: 17px;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .parent {
+      background-color: white;
+      width: 1200px;
+      margin: 0 auto;
+      height: 650px;
+      position: relative;
+      z-index: 1;
+      margin-top: -5px;
+    }
+
+    .tt {
+      margin: 20px;
+    }
+
+    .tt i {
+      font-size: 11px;
+    }
+
+    .product-card {
+      display: flex;
+      padding: 20px;
+      border: 1px solid #a5a1a1;
+      width: 700px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      align-items: center;
+      margin-left: 20px;
+    }
+
+    .product-image img {
+      width: 150px;
+      height: 120px;
+      object-fit: contain;
+    }
+
+    .product-details {
+      margin-left: 20px;
+      flex: 1;
+    }
+
+    .product-details h4 {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .qty-section {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      margin-bottom: 5px;
+    }
+
+    .qty-section button {
+      width: 70px;
+      height: 30px;
+      border-radius: 10px;
+      background-color: transparent;
+    }
+
+    .price-section {
+      margin-bottom: 10px;
+    }
+
+    .price-section strong {
+      font-size: 18px;
+    }
+
+    .actions {
+      display: flex;
+      gap: 10px;
+    }
+
+   
+    .checkout-box {
+      width: 30%;
+      background: white;
+      border: 1px solid #eee;
+      border-radius: 10px;
+      padding: 20px;
+      height: 200px;
+      margin-left: 800px;
+      margin-top: -640px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+   
+    .checkout-box .line {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+
+  .footer {
+  background: #9dc3c9;
+  margin: 20px auto 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 40px 60px 20px;
+  width: 1201px;
+  font-family: Arial, sans-serif;
+}
+
+ 
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  line-height: 2;
+  font-size: 14px;
+  color: black;
+}
+
+.footer-section p {
+  font-size: 14px;
+  color: black;
+  margin: 6px 0;
+}
+
+.social-media {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.social-media i {
+  font-size: 16px;
+  color: black;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  font-size: 13px;
+  background: #9dc3c9;
+  width: 100%;
+  border-top: 1px solid #555;
+  color: black;
+  flex-wrap: wrap;
+}
+
+.footer-links {
+  white-space: nowrap;
+}
+
+.footer-right {
+  white-space: nowrap;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+
+  </style>
+</head>
+<body>
+  <div class="page-border">
+    <div class="container">
+      <div class="header">
+        <h2>Fragranzia</h2>
+        <div class="header-right">
+          <ul class="list">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="productpage1.html">Products</a></li>
+            <li>Gifting</li>
+          <li><a href="About.html">About</a></li>
+          </ul>
+          <div class="search-box">
+            <i class="fa fa-search"></i>
+            <input type="text" placeholder="Search Here" />
+          </div>
+          <div class="icon-group">
+            <div class="icon1"><i class="fas fa-shopping-cart"></i></div>
+            <div class="icon2"><i class="fas fa-bell"></i></div>
+            <div class="icon3"><i class="fas fa-user"></i></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="parent">
+        <div class="tt">
+          <h3>Cart</h3><br>
+          <p style="color: #555;">home <i class="fa-solid fa-greater-than" style="color: #555;"></i> cart</p>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="perfume.jpg" alt="Product" />
+          </div>
+          <div class="product-details">
+            <h4>Autograph eau de parfum 100ml for men</h4>
+            <div class="qty-section">
+              <button>-&nbsp;&nbsp;<span>&nbsp;&nbsp;1&nbsp;&nbsp;</span>&nbsp;&nbsp;+</button>
+            </div>
+            <div class="price-section">
+              <strong>Rs 899</strong> <s>Rs 2000</s> <span style="color:green">61% off</span>
+            </div>
+            <div class="actions">
+            <button class="delete" style=" color: red; background-color: white;  padding: 8px 16px;  border: 1px solid red;  width: 160px;">Delete</button>
+              <button class="share" style=" color: black; background-color: white; padding: 8px 16px; border: 1px solid black; width: 160px;">Share</button>
+              <button class="buy" style="background: #003B49; color: white; border: none;  width: 160px;">Buy</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="musk.webp" alt="Product" />
+          </div>
+          <div class="product-details">
+            <h4>Royal eau de parfum 100ml for men</h4>
+            <div class="qty-section">
+             <button>-&nbsp;&nbsp;<span>&nbsp;&nbsp;1&nbsp;&nbsp;</span>&nbsp;&nbsp;+</button>
+            </div>
+            <div class="price-section">
+              <strong>Rs 899</strong> <s>Rs 2000</s> <span style="color:green">61% off</span>
+            </div>
+            <div class="actions">
+              <button class="delete" style=" color: red; background-color: white;  padding: 8px 16px;  border: 1px solid red;  width: 160px;">Delete</button>
+              <button class="share" style=" color: black; background-color: white; padding: 8px 16px; border: 1px solid black; width: 160px;">Share</button>
+              <button class="buy" style="background: #003B49; color: white; border: none;  width: 160px;">Buy</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">
+            <img src="ne.webp" alt="Product" />
+          </div>
+          <div class="product-details">
+            <h4>Royal eau de parfum 100ml for men</h4>
+            <div class="qty-section">
+              <button>-&nbsp;&nbsp;<span>&nbsp;&nbsp;1&nbsp;&nbsp;</span>&nbsp;&nbsp;+</button>
+            </div>
+            <div class="price-section">
+              <strong>Rs 899</strong> <s>Rs 2000</s> <span style="color:green">61% off</span>
+            </div>
+            <div class="actions">
+            <button class="delete" style=" color: red; background-color: white;  padding: 8px 16px;  border: 1px solid red;  width: 160px;">Delete</button>
+              <button class="share" style=" color: black; background-color: white; padding: 8px 16px; border: 1px solid black; width: 160px;">Share</button>
+              <button class="buy" style="background: #003B49; color: white; border: none;  width: 160px;">Buy</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="checkout-box">
+          <h4 style=" margin-bottom: 20px; font-size: 20px;">Check Out</h4>
+          <div class="line"><span>Price (3 item)</span><span>Rs 3,097</span></div>
+          <div class="line"><span>Discount</span><span>-Rs 1,604</span></div>
+              <div class="line"><span>Delivery Charge</span><span style="color: green;">Free</span></div>
+
+          <div class="line total"><span style="font-size: 18px;">Total Amount</span><span>Rs 3,493</span></div>
+          <button style="  margin-top: 40px; padding: 12px;   width: 100%; background: #003B49; color: white; border: none; border-radius: 5px;">Proceed to Buy</button>
+          <p style="font-size: 13px; margin-top: 10px; color: #666; text-align:center; width: 200px; margin-left: 70px">Safe and Secure Payments. Easy returns. 100% Authentic products.</p>
+        </div>
+      </div>
+
+      <div class="footer">
+  <div>
+    <h2 style="color: #003B49; font-size: 24px; margin-bottom: 20px; margin-top: 70px; margin-left: -30px;">Fragranzia</h2>
+  </div>
+
+  <div class="footer-section">
+    <h4 style="font-weight: bold; margin-bottom: 10px;">Pages</h4>
+    <ul>
+      <li>Home</li>
+      <li>Products</li>
+      <li>Gifting</li>
+      <li>About</li>
+      <li>Profile</li>
+    </ul>
+  </div>
+
+  <div class="footer-section">
+    <h4>Quick Links</h4>
+    <ul>
+      <li>Privacy policy</li>
+      <li>Terms and conditions</li>
+      <li>FAQs</li>
+      <li>Customer service</li>
+    </ul>
+  </div>
+
+  <div class="footer-section">
+    <h4>Contact</h4>
+    <p><i class="fas fa-envelope"></i> frtafurniture@gmail.com</p>
+    <p><i class="fas fa-phone"></i> +91 9876543210</p><br>
+    <h4>Social Media</h4>
+    <div class="social-media">
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-facebook"></i>
+      <i class="fab fa-x-twitter"></i>
+      <i class="fab fa-youtube"></i>
+      <i class="fab fa-linkedin"></i>
+    </div>
+  </div>
+</div>
+
+<div class="footer-bottom">
+  <span class="footer-links">
+    Web Accessibility | Terms of Use | Privacy Statement | Contact Us
+  </span>
+  <span class="footer-right">
+    © 2024 Fragranzia Company. All rights reserved.
+  </span>
+</div>
+
+    </div>
+  </div>
+</body>
+</html>
