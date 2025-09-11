@@ -103,7 +103,7 @@
     }
 
     .hero {
-      background-image: url('images/blue\ b.png');
+      background-image: url('blue\ b.png');
       background-color: #003B49;
       color: white;
       margin: 30px auto; /* Changed from fixed margins */
@@ -396,8 +396,8 @@
     }
 
     .category-item img {
-      width: 220px;
-      height: 220px;
+      width: 240px;
+      height: 240px;
       object-fit: contain;
       padding: 26px;
       background-color: white;
@@ -416,11 +416,12 @@
       align-items: center;
       background-color: rgb(183, 227, 244);
       padding: 20px;
-      width: 100%;
-      max-width: 100%; /* Ensure it doesn't exceed viewport */
+      width: 1410px;
+      max-width: 100%; 
       height: 270px;
       margin-top: 70px;
       border-radius: 10px;
+      margin-left: 135px;
     }
 
     .promo-text {
@@ -457,6 +458,7 @@
       border-top-right-radius: 10px;   
       border-bottom-right-radius: 10px;
       margin-top: 5px;
+      margin-right: -20px;
     }
     
     .footer {
@@ -633,57 +635,23 @@
         gap: 20px;
       }
       
-     
-    .promo-banner {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: rgb(183, 227, 244);
-      padding: 20px;
-      width: 1410px;
-      max-width: 100%; /* Ensure it doesn't exceed viewport */
-      height: 270px;
-      margin-top: 70px;
-      border-radius: 10px;
-      margin-left: 135px;
-    }
-
-    .promo-text {
-      max-width: 50%;
-      margin-left: 40px;
-    }
-
-    .promo-text h2 {
-      font-size: 28px;
-      font-weight: bold;
-      color:  black;
-      margin-bottom: 10px;
-    }
-
-    .promo-text p {
-      font-size: 18px;
-      color: #333;
-      margin-bottom: 20px;
-    }
-
-    .promo-text button {
-      background-color: #003049;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 6px;
-      font-size: 14px;
-      cursor: pointer;
-    }
-
-    .promo-image img {
-      height: 270px;
-      width: 500px;
-      border-top-right-radius: 10px;   
-      border-bottom-right-radius: 10px;
-      margin-top: 5px;
-      margin-right: -20px;
-    }
+      .promo-banner {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+      }
+      
+      .promo-text {
+        max-width: 100%;
+        margin-left: 0;
+        margin-bottom: 20px;
+      }
+      
+      .promo-image img {
+        width: 100%;
+        border-radius: 10px;
+      }
+      
       .footer {
         flex-direction: column;
         gap: 30px;
@@ -734,8 +702,8 @@
           <button>Shop Now</button>
         </div>
         <div class="hero-image">
-          <img src="images/bbb.png" alt="Perfume Bottles" style=" transform: rotate(-15deg);  left: 60px; top: 30px;">
-           <img src="images/bbb.png" alt="Perfume Bottles" style=" transform: rotate(20deg); height:180px; width: 200px;  left: 160px; top: 60px;">
+          <img src="bbb.png" alt="Perfume Bottles" style=" transform: rotate(-15deg);  left: 60px; top: 30px;">
+           <img src="bbb.png" alt="Perfume Bottles" style=" transform: rotate(20deg); height:180px; width: 200px;  left: 160px; top: 60px;">
         </div>
       </section>
 
@@ -745,18 +713,18 @@
             <h4>Unlock Exclusive<br>Offers</h4>
             <p>Discover special deals tailored just for you!</p>
           </div>
-          <img src="images/y.jpg" alt="Exclusive Offer" style="height: 150px; margin-bottom: 0;">
+          <img src="y.jpg" alt="Exclusive Offer" style="height: 150px; margin-bottom: 0;">
         </div>
 
         <div class="feature-box">
           <h4>Gift a Scents to your loved one.</h4>
           <p>Make your love more beautiful</p>
-          <img src="images/black.png" alt="Gift" style="width: 140px; height:110px; margin-top: -6px;">
+          <img src="black.png" alt="Gift" style="width: 140px; height:110px; margin-top: -6px;">
         </div>
         
         <div class="feature-box">
           <h4>Luxury Scents Starting at ₹4,000</h4>
-          <img src="images/lu.png" alt="Luxury" style="width: 140px; height:110px; margin-top: 4px;  transform: rotate(20deg); margin-left:120px;">
+          <img src="lu.png" alt="Luxury" style="width: 140px; height:110px; margin-top: 4px;  transform: rotate(20deg); margin-left:120px;">
           <div class="shop"><img src="shop now.png"></div>
         </div>
       </section>
@@ -796,38 +764,38 @@
       
         <div class="product-grid">
           <div class="product-card">
-            <div class="product-image"><img src="images/red.png" alt="Product"></div>
+            <div class="product-image"><img src="red.png" alt="Product"></div>
             <div class="con">
               <h4>Kyros Eau De Parfum 100ml<br>For Men</h4><br>
               <div><span class="price">Rs 899</span><span class="old-price">Rs 2600</span></div>
-              <button style=" margin-top: 10px;  width: 330px;  padding: 10px;  background-color: #003B49; color: white;  border: none;  border-radius: 6px;">Add to Cart</button>
+              <button style=" margin-top: 10px;  width: 340px;  padding: 10px;  background-color: #003B49; color: white;  border: none;  border-radius: 6px;">Add to Cart</button>
             </div>
           </div>
 
           <div class="product-card">
-            <div class="product-image"><img src="images/black.jpg" alt="Product"></div>
+            <div class="product-image"><img src="black.jpg" alt="Product"></div>
             <div class="con">
               <h4>Kyros Eau De Parfum 100ml<br>For Men</h4><br>
               <div><span class="price">Rs 899</span><span class="old-price">Rs 2600</span></div>
-              <button style=" margin-top: 10px;  width: 330px;  padding: 10px;  background-color: #003B49; color: white;  border: none;  border-radius: 6px;">Add to Cart</button>
+              <button style=" margin-top: 10px;  width: 340px;  padding: 10px;  background-color: #003B49; color: white;  border: none;  border-radius: 6px;">Add to Cart</button>
             </div>
           </div>
 
           <div class="product-card">
-            <div class="product-image"><img src="images/img4.jpg" alt="Product"></div>
+            <div class="product-image"><img src="img4.jpg" alt="Product"></div>
             <div class="con">
               <h4>Kyros Eau De Parfum 100ml<br>For Men</h4><br>
               <div><span class="price">Rs 899</span><span class="old-price">Rs 2600</span></div>
-              <button style=" margin-top: 10px;  width: 330px;  padding: 10px;  background-color: #003B49; color: white;  border: none;  border-radius: 6px;">Add to Cart</button>
+              <button style=" margin-top: 10px;  width: 340px;  padding: 10px;  background-color: #003B49; color: white;  border: none;  border-radius: 6px;">Add to Cart</button>
             </div>
           </div>
 
           <div class="product-card">
-            <div class="product-image"><img src="images/ne.webp" alt="Product"></div>
+            <div class="product-image"><img src="ne.webp" alt="Product"></div>
             <div class="con">
               <h4>Kyros Eau De Parfum 100ml<br>For Men</h4><br>
               <div><span class="price">Rs 899</span><span class="old-price">Rs 2600</span></div>
-              <button style=" margin-top: 10px;  width: 330px;  padding: 10px;  background-color: #003B49; color: white;  border: none;  border-radius: 6px;">Add to Cart</button>
+              <button style=" margin-top: 10px;  width: 340px;  padding: 10px;  background-color: #003B49; color: white;  border: none;  border-radius: 6px;">Add to Cart</button>
             </div>
           </div>
         </div>
@@ -839,15 +807,15 @@
 
       <div class="card-grid">
         <div class="card-item">
-          <img src="images/row1.jpg" alt="New Arrivals">
+          <img src="row1.jpg" alt="New Arrivals">
           <div class="card-label">New Arrivals</div>
         </div>
         <div class="card-item">
-          <img src="images/row2.jpg" alt="Limited Edition">
+          <img src="row2.jpg" alt="Limited Edition">
           <div class="card-label">Limited Edition</div>
         </div>
         <div class="card-item">
-          <img src="images/row3.jpg" alt="Best Sellers">
+          <img src="row3.jpg" alt="Best Sellers">
           <div class="card-label">Best Sellers</div>
         </div>
       </div>
@@ -860,23 +828,23 @@
 
         <div class="categories-icons">
           <div class="category-item">
-            <img src="images/img7.webp" alt="Eau De Parfum">
+            <img src="img7.webp" alt="Eau De Parfum">
             <p>Eau De Parfum</p>
           </div>
           <div class="category-item">
-            <img src="images/per2.webp" alt="Concentrated">
+            <img src="per2.webp" alt="Concentrated">
             <p>Concentrated</p>
           </div>
           <div class="category-item">
-            <img src="images/img6.jpg" alt="Deodorants">
+            <img src="img6.jpg" alt="Deodorants">
             <p>Deodorants</p>
           </div>
           <div class="category-item">
-            <img src="images/white.jpg" alt="Body Mist">
+            <img src="white.jpg" alt="Body Mist">
             <p>Body Mist</p>
           </div>
           <div class="category-item">
-            <img src="images/last.png" alt="Combo">
+            <img src="last.png" alt="Combo">
             <p>Combo</p>
           </div>
         </div>
@@ -893,38 +861,38 @@
       
         <div class="product-grid1">
           <div class="product-card1">
-            <div class="product-image"><img src="images/red.png" alt="Product"></div>
+            <div class="product-image"><img src="red.png" alt="Product"></div>
             <div class="con">
               <h4>Kyros Eau De Parfum 100ml<br>For Men</h4><br>
               <div><span class="price">Rs 899</span><span class="old-price">Rs 2600</span></div>
-              <button style=" margin-top: 10px;  width: 330px;  padding: 10px;  background-color: #003B49; color: white;  border: none;  border-radius: 6px;">Add to Cart</button>
+              <button style=" margin-top: 10px;  width: 340px;  padding: 10px;  background-color: #003B49; color: white;  border: none;  border-radius: 6px;">Add to Cart</button>
             </div>
           </div>
 
           <div class="product-card1">
-            <div class="product-image"><img src="images/black.jpg" alt="Product"></div>
+            <div class="product-image"><img src="black.jpg" alt="Product"></div>
             <div class="con">
               <h4>Kyros Eau De Parfum 100ml<br>For Men</h4><br>
               <div><span class="price">Rs 899</span><span class="old-price">Rs 2600</span></div>
-              <button style=" margin-top: 10px;  width: 330px;  padding: 10px;  background-color: #003B49; color: white;  border: none;  border-radius: 6px;">Add to Cart</button>
+              <button style=" margin-top: 10px;  width: 340px;  padding: 10px;  background-color: #003B49; color: white;  border: none;  border-radius: 6px;">Add to Cart</button>
             </div>
           </div>
 
           <div class="product-card1">
-            <div class="product-image"><img src="images/img4.jpg" alt="Product"></div>
+            <div class="product-image"><img src="img4.jpg" alt="Product"></div>
             <div class="con">
               <h4>Kyros Eau De Parfum 100ml<br>For Men</h4><br>
               <div><span class="price">Rs 899</span><span class="old-price">Rs 2600</span></div>
-              <button style=" margin-top: 10px;  width: 330px;  padding: 10px;  background-color: #003B49; color: white;  border: none;  border-radius: 6px;">Add to Cart</button>
+              <button style=" margin-top: 10px;  width: 340px;  padding: 10px;  background-color: #003B49; color: white;  border: none;  border-radius: 6px;">Add to Cart</button>
             </div>
           </div>
 
           <div class="product-card1">
-            <div class="product-image"><img src="images/ne.webp" alt="Product"></div>
+            <div class="product-image"><img src="ne.webp" alt="Product"></div>
             <div class="con">
               <h4>Kyros Eau De Parfum 100ml<br>For Men</h4><br>
               <div><span class="price">Rs 899</span><span class="old-price">Rs 2600</span></div>
-              <button style=" margin-top: 10px;  width: 330px;  padding: 10px;  background-color: #003B49; color: white;  border: none;  border-radius: 6px;">Add to Cart</button>
+              <button style=" margin-top: 10px;  width: 340px;  padding: 10px;  background-color: #003B49; color: white;  border: none;  border-radius: 6px;">Add to Cart</button>
             </div>
           </div>
         </div>
@@ -937,7 +905,7 @@
           <button>Shop Now</button>
         </div>
         <div class="promo-image">
-          <img src="images/bbbbb.jpg" alt="Perfume Promo">
+          <img src="bbbbb.jpg" alt="Perfume Promo">
         </div>
       </section>
 
@@ -993,6 +961,3 @@
     </div>
 </body>
 </html>
-
-
-
