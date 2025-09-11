@@ -633,23 +633,57 @@
         gap: 20px;
       }
       
-      .promo-banner {
-        flex-direction: column;
-        height: auto;
-        text-align: center;
-      }
-      
-      .promo-text {
-        max-width: 100%;
-        margin-left: 0;
-        margin-bottom: 20px;
-      }
-      
-      .promo-image img {
-        width: 100%;
-        border-radius: 10px;
-      }
-      
+     
+    .promo-banner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: rgb(183, 227, 244);
+      padding: 20px;
+      width: 1410px;
+      max-width: 100%; /* Ensure it doesn't exceed viewport */
+      height: 270px;
+      margin-top: 70px;
+      border-radius: 10px;
+      margin-left: 135px;
+    }
+
+    .promo-text {
+      max-width: 50%;
+      margin-left: 40px;
+    }
+
+    .promo-text h2 {
+      font-size: 28px;
+      font-weight: bold;
+      color:  black;
+      margin-bottom: 10px;
+    }
+
+    .promo-text p {
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .promo-text button {
+      background-color: #003049;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .promo-image img {
+      height: 270px;
+      width: 500px;
+      border-top-right-radius: 10px;   
+      border-bottom-right-radius: 10px;
+      margin-top: 5px;
+      margin-right: -20px;
+    }
       .footer {
         flex-direction: column;
         gap: 30px;
@@ -959,5 +993,6 @@
     </div>
 </body>
 </html>
+
 
 
