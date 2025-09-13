@@ -278,16 +278,17 @@
 
 
 /* Flip corners on hover */
- .product-image {
-  border-top-left-radius: 0;
-  border-bottom-right-radius: 0;
-  border-top-right-radius: 100px;
-  border-bottom-left-radius: 100px;
-}
+ 
+
     .product-card img:hover {
   transform: scale(1.1);
 }
-
+.product-image:hover {
+  border-top-left-radius: 0; /* reset */
+  border-bottom-right-radius: 0; /* reset */
+  border-top-right-radius: 100px; 
+  border-bottom-left-radius: 100px;
+}
     .product-btn {
   margin-top: 10px;
   width: 330px;
@@ -1001,7 +1002,6 @@
     </div>
 </body>
 </html>
-
 
 
 
