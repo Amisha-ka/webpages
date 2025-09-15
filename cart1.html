@@ -179,6 +179,23 @@
       margin-top: -640px;
       box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     }
+    .checkout-box button {
+  margin-top: 40px;
+  padding: 12px;
+  width: 100%;
+  background: #003B49;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.checkout-box button:hover {
+  background: #006a80;   /* lighter blue */
+  transform: scale(1.05); /* slightly grow */
+}
+
 
     .checkout-box .line {
       display: flex;
@@ -280,7 +297,7 @@
 
         <div class="product-card">
           <div class="product-image">
-            <img src="images/perfume.jpg" alt="Product" />
+            <img src="perfume.jpg" alt="Product" />
           </div>
           <div class="product-details">
             <h4>Autograph eau de parfum 100ml for men</h4>
@@ -300,7 +317,7 @@
 
         <div class="product-card">
           <div class="product-image">
-            <img src="images/musk.webp" alt="Product" />
+            <img src="musk.webp" alt="Product" />
           </div>
           <div class="product-details">
             <h4>Royal eau de parfum 100ml for men</h4>
@@ -320,7 +337,7 @@
 
         <div class="product-card">
           <div class="product-image">
-            <img src="images/ne.webp" alt="Product" />
+            <img src="ne.webp" alt="Product" />
           </div>
           <div class="product-details">
             <h4>Royal eau de parfum 100ml for men</h4>
@@ -345,8 +362,10 @@
           <div class="line"><span>Delivery Charge</span><span style="color: green;">Free</span></div>
 
           <div class="line total"><span style="font-size: 18px;">Total Amount</span><span>Rs 3,493</span></div>
-          <button style="  margin-top: 40px; padding: 12px;   width: 100%; background: #003B49; color: white; border: none; border-radius: 5px;">Proceed to Buy</button>
-          <p style="font-size: 13px; margin-top: 10px; color: #666; text-align:center; width: 200px; margin-left: 130px">Safe and Secure Payments. Easy returns. 100% Authentic products.</p>
+          <a href="paymentpage.html">
+<button>Proceed to Buy</button>
+            </a>
+          <p style="font-size: 13px; margin-top: 10px; color: #666; text-align:center; width: 200px; margin-left: 140px">Safe and Secure Payments. Easy returns. 100% Authentic products.</p>
         </div>
       </div>
 
@@ -403,4 +422,3 @@
   </div>
 </body>
 </html>
-
