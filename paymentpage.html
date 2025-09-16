@@ -272,6 +272,22 @@
         font-size: 16px;
       }
     }
+     .btn {
+    background: #004b6e;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.3s ease; 
+  }
+
+  .btn:hover {
+    background: #006a99; 
+    transform: scale(1.05); 
+  }
   </style>
 </head>
 <body>
@@ -360,13 +376,12 @@
             <span><i class="fas fa-university"></i> Net Banking</span>
             <input type="radio" name="pay">
           </div>
-          <button class="btn">Pay Now</button>
+        <button class="btn" onclick="window.location.href='success.html'">Pay Now</button>
         </div>
       </div>
     </div>
   </div>
 </body>
 </html>
-
 
 
