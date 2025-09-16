@@ -18,11 +18,11 @@
       justify-content: space-between;
       background-color: white;
       padding: 20px 40px;
-      max-width: 1200px;
-      margin: 0 auto;
+      width: 100%; /* Full width */
       box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
       position: relative;
       z-index: 10;
+      box-sizing: border-box;
     }
 
     .header h2 {
@@ -88,18 +88,13 @@
       justify-content: center;
     }
 
-    .border {
-      border: 30px solid gray;
-      width: 1200px;
-      margin: 30px auto 0;
-      padding: 0;
-    }
-
     .parent {
       display: flex;
       justify-content: space-between;
       gap: 30px;
       padding: 40px 50px;
+      width: 100%; /* Full width */
+      box-sizing: border-box;
     }
 
     .text.small {
@@ -116,7 +111,6 @@
       font-size: 17px;
       color: #333;
       line-height: 1.7;
-      width: 600px;
     }
 
     .images {
@@ -138,12 +132,13 @@
 
     .footer {
       background: #9dc3c9;
-      margin: 20px auto 0;
+      margin: 20px 0 0;
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
       padding: 40px 60px 20px;
-      width: 1080px;
+      width: 100%;
+      box-sizing: border-box;
     }
 
     .footer-section ul {
@@ -178,32 +173,31 @@
       padding: 10px 30px;
       font-size: 13px;
       background: #9dc3c9;
-      width: 1140px;
-      margin: 0 auto;
+      width: 100%;
       border-top: 1px solid #555;
       color: black;
       flex-wrap: wrap;
+      box-sizing: border-box;
     }
 
     .footer-links,
     .footer-right {
       white-space: nowrap;
     }
-    a{
-  text-decoration: none;
-  color: black;
-}
+    a {
+      text-decoration: none;
+      color: black;
+    }
   </style>
 </head>
 <body>
   <div class="container">
-    <div class="border">
-      
+
       <div class="header">
         <h2 style="margin-left: 10px;">Fragranzia</h2>
         <div class="header-right">
           <ul class="list">
-          <li><a href="home.html">Home</a></li>
+            <li><a href="home.html">Home</a></li>
             <li><a href="productpage1.html">Products</a></li>
             <li>Gifting</li>
             <li><strong style="color: #003B49;">About</strong></li>
@@ -220,7 +214,6 @@
         </div>
       </div>
 
-     
       <div class="parent">
         <div style="flex: 2;">
           <div class="text small">
@@ -246,12 +239,11 @@
           </div>
         </div>
         <div class="images">
-          <img src="images/manper.webp" alt="Perfume Image 1">
-          <img src="images/perfume2.jpg" alt="Perfume Image 2">
+          <img src="manper.webp" alt="Perfume Image 1">
+          <img src="perfume2.jpg" alt="Perfume Image 2">
         </div>
       </div>
 
-    
       <div class="footer">
         <div>
           <h2 style="color: #003B49; font-size: 24px; margin-bottom: 20px;">Fragranzia</h2>
@@ -301,8 +293,7 @@
           © 2024 Fragranzia Company. All rights reserved.
         </span>
       </div>
-    </div>
+
   </div>
 </body>
 </html>
-
