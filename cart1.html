@@ -278,16 +278,32 @@
     transition: all 0.2s ease-in-out;
   }
 
-  /* Hover effect */
+
   .btn-delete:hover {
     background: rgb(255, 18, 18);
     color: white;
   }
 
-  /* Click (active) effect */
+
   .btn-delete:active {
     transform: scale(0.95);
   }
+  .buy {
+  background: #003B49;
+  color: white;
+  border: none;
+  width: 160px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.buy:hover {
+  background: #006a80;   
+  transform: scale(1.05);
+}
+
   </style>
 </head>
 <body>
@@ -335,7 +351,7 @@
             <div class="actions">
      <a href="failure.html" class="btn-delete">Delete</a>
          <button class="share" style=" color: black; background-color: white; padding: 8px 16px; border: 1px solid black; width: 160px;">Share</button>
-              <button class="buy" style="background: #003B49; color: white; border: none;  width: 160px;">Buy</button>
+<button class="buy" onclick="window.location.href='paymentpage.html'">Buy</button>
             </div>
           </div>
         </div>
@@ -355,7 +371,7 @@
             <div class="actions">
             <a href="failure.html" class="btn-delete">Delete</a>
               <button class="share" style=" color: black; background-color: white; padding: 8px 16px; border: 1px solid black; width: 160px;">Share</button>
-              <button class="buy" style="background: #003B49; color: white; border: none;  width: 160px;">Buy</button>
+<button class="buy" onclick="window.location.href='paymentpage.html'">Buy</button>
             </div>
           </div>
         </div>
@@ -375,7 +391,7 @@
             <div class="actions">
             <a href="failure.html" class="btn-delete">Delete</a>
               <button class="share" style=" color: black; background-color: white; padding: 8px 16px; border: 1px solid black; width: 160px;">Share</button>
-              <button class="buy" style="background: #003B49; color: white; border: none;  width: 160px;">Buy</button>
+<button class="buy" onclick="window.location.href='paymentpage.html'">Buy</button>
             </div>
           </div>
         </div>
