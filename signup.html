@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Log In</title>
+  <title>Sign Up</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
   <style>
     * {
@@ -13,37 +13,36 @@
 
     body {
       font-family: Arial, sans-serif;
-     
-      padding: 20px;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #f9f9f9;
     }
-     
-
 
     .inner-box {
       background-color: white;
       display: flex;
-      width: 856px;
-      height: 700px;
-      border: 30px solid gray;
-      width: 999px;
-      height: px;
-      margin-top: -15px;
-      margin-left: 215px;
-      
-
+      max-width: 1000px;    /* controls total width */
+      width: 90%;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      overflow: hidden;
     }
 
     .image-container {
+      flex: 1;
       position: relative;
-      width: 300px;
-      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     .image-container img {
-      width: 400px;
-      height: 450px;
-      margin-top: 100px;
-      margin-left: 50px;
+      width: 100%;
+      height: 100%;
+      max-width: 400px;
+      max-height: 450px;
       border-top-right-radius: 160px;
       border-bottom-left-radius: 160px;
       object-fit: cover;
@@ -52,10 +51,10 @@
     .image-container::after {
       content: "";
       position: absolute;
-      top: 100px;
-      left: 50px;
-      width: 400px;
-      height: 450px;
+      width: 100%;
+      height: 100%;
+      max-width: 400px;
+      max-height: 450px;
       border-top-right-radius: 160px;
       border-bottom-left-radius: 160px;
       background-color: rgba(0, 0, 0, 0.4);
@@ -64,14 +63,10 @@
 
     .text {
       position: absolute;
-      top: 220px;
-      left: 90px;
       z-index: 2;
       color: white;
       text-align: center;
       width: 220px;
-      margin-top: 75px;
-      margin-left: 40px;
     }
 
     .text h2 {
@@ -84,19 +79,13 @@
       margin-top: 10px;
     }
 
-    .label {
-      color: rgb(209, 202, 202);
-     
-      margin-left: 250px;
-    }
-
     .right-box {
-      width: 400px;
+      width: 550px;  /* ✅ reduced width */
       padding: 40px;
-      margin-left: 180px;
-      
-
-  margin-top: 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background: #fff;
     }
 
     .social-buttons {
@@ -104,7 +93,26 @@
       justify-content: space-between;
       margin-bottom: 25px;
     }
-      .divider {
+
+    .social-buttons button {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+      margin: 0 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: white;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .social-buttons i {
+      margin-right: 8px;
+    }
+
+    .divider {
       display: flex;
       align-items: center;
       text-align: center;
@@ -128,28 +136,6 @@
       margin-left: 10px;
     }
 
-
-    .social-buttons button {
-      flex: 1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 10px;
-      margin: 0 5px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      background-color: white;
-      cursor: pointer;
-      font-weight: bold;
-    }
-
-    .social-buttons i {
-      margin-right: 8px;
-    }
-
-     
-   
-
     .form-group {
       margin-bottom: 15px;
       position: relative;
@@ -169,12 +155,6 @@
       left: 10px;
       transform: translateY(-50%);
       color: #777;
-    }
-
-    .form-group .toggle-eye {
-      right: 10px;
-      left: auto;
-      cursor: pointer;
     }
 
     .checkbox {
@@ -215,16 +195,14 @@
   </style>
 </head>
 <body>
-   <div class="outer-box">
-    <div class="label">Log Sign Up</div>
-    <div class="inner-box">
-      <div class="image-container">
-        <img src="images/perfume2.jpg" alt="Image">
-        <div class="text">
-          <h2>Let’s Get Started!</h2>
-          <p>Create your account and unlock the full potential of Fragranza.</p>
-        </div>
+  <div class="inner-box">
+    <div class="image-container">
+      <img src="images/perfume2.jpg" alt="Image">
+      <div class="text">
+        <h2>Let’s Get Started!</h2>
+        <p>Create your account and unlock the full potential of Fragranza.</p>
       </div>
+    </div>
 
     <div class="right-box">
       <div class="social-buttons">
@@ -239,29 +217,26 @@
         <input type="text" placeholder="Enter your username">
       </div>
 
-     <div class="form-group">
-          <i class="fa fa-envelope"></i>
-          <input type="email" placeholder="Enter your E-Mail" />
-        </div>
+      <div class="form-group">
+        <i class="fa fa-envelope"></i>
+        <input type="email" placeholder="Enter your E-Mail" />
+      </div>
 
-        <div class="form-group">
-          <i class="fa fa-lock"></i>
-          <input type="password" placeholder="Enter your password" />
-           <i class="fa fa-eye-slash fa-right" style="margin-left: 260px;"></i>
-        </div>
+      <div class="form-group">
+        <i class="fa fa-lock"></i>
+        <input type="password" placeholder="Enter your password" />
+      </div>
 
-        <div class="form-group">
-          <i class="fa fa-lock"></i>
-          <input type="password" placeholder="Confirm your password" />
-           <i class="fa fa-eye-slash fa-right" style="margin-left: 260px;"></i>
-        </div>
+      <div class="form-group">
+        <i class="fa fa-lock"></i>
+        <input type="password" placeholder="Confirm your password" />
+      </div>
 
       <div class="checkbox">
-          <input type="checkbox" /> Agree with <a href="#">Terms & Conditions</a>
-        </div>
+        <input type="checkbox" /> Agree with <a href="#">Terms & Conditions</a>
+      </div>
 
-
-      <button class="login-button">sign up</button>
+      <button class="login-button">Sign Up</button>
 
       <div class="signup-link">
         Already have an account? <a href="#">Sign In</a>
@@ -270,4 +245,3 @@
   </div>
 </body>
 </html>
-
