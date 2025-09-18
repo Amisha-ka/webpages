@@ -13,37 +13,38 @@
 
     body {
       font-family: Arial, sans-serif;
-     
-      padding: 20px;
-    }
-     
-
-
-    .inner-box {
-      background-color: white;
+      height: 100vh;
       display: flex;
-      width: 856px;
-      height: 700px;
-      border: 30px solid gray;
-      width: 999px;
-      height: px;
-      margin-top: -15px;
-      margin-left: 215px;
-      
-
+      justify-content: center;
+      align-items: center;
+      background: #f9f9f9;
     }
+
+  .inner-box {
+  display: flex;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  overflow: hidden;
+  width: 1100px;     /* width is fine */
+  min-height: 650px; /* ⬅️ add more height */
+  max-width: 95%;  
+}
+
 
     .image-container {
+      flex: 1;
       position: relative;
-      width: 300px;
-      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     .image-container img {
-      width: 400px;
-      height: 450px;
-      margin-top: 100px;
-      margin-left: 50px;
+      width: 100%;
+      height: 100%;
+      max-width: 430px;
+      max-height: 450px;
       border-bottom-right-radius: 160px;
       border-top-left-radius: 160px;
       object-fit: cover;
@@ -52,11 +53,11 @@
     .image-container::after {
       content: "";
       position: absolute;
-      top: 100px;
-      left: 50px;
-      width: 400px;
-      height: 450px;
-    border-bottom-right-radius: 160px;
+      width: 100%;
+      height: 100%;
+      max-width: 430px;
+      max-height: 450px;
+      border-bottom-right-radius: 160px;
       border-top-left-radius: 160px;
       background-color: rgba(0, 0, 0, 0.4);
       z-index: 1;
@@ -64,14 +65,10 @@
 
     .text {
       position: absolute;
-      top: 220px;
-      left: 90px;
       z-index: 2;
       color: white;
       text-align: center;
       width: 220px;
-      margin-top: 75px;
-      margin-left: 40px;
     }
 
     .text h2 {
@@ -83,27 +80,44 @@
       font-size: 14px;
       margin-top: 10px;
     }
+.right-box {
+  width: 600px;            /* more width */
+  min-height: 500px;       /* more height */
+  padding: 50px;           /* more padding inside */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #fff;
+  border-radius: 10px;     /* optional rounded edges */
+}
 
-    .label {
-      color: rgb(209, 202, 202);
-      margin-bottom: 10px;
-    }
 
-    .right-box {
-      width: 400px;
-      padding: 40px;
-      margin-left: 180px;
-      
-
-  margin-top: 100px;
-    }
 
     .social-buttons {
       display: flex;
       justify-content: space-between;
       margin-bottom: 25px;
     }
-      .divider {
+
+    .social-buttons button {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+      margin: 0 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: white;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .social-buttons i {
+      margin-right: 8px;
+    }
+
+    .divider {
       display: flex;
       align-items: center;
       text-align: center;
@@ -127,28 +141,6 @@
       margin-left: 10px;
     }
 
-
-    .social-buttons button {
-      flex: 1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 10px;
-      margin: 0 5px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      background-color: white;
-      cursor: pointer;
-      font-weight: bold;
-    }
-
-    .social-buttons i {
-      margin-right: 8px;
-    }
-
-     
-   
-
     .form-group {
       margin-bottom: 15px;
       position: relative;
@@ -168,12 +160,6 @@
       left: 10px;
       transform: translateY(-50%);
       color: #777;
-    }
-
-    .form-group .toggle-eye {
-      right: 10px;
-      left: auto;
-      cursor: pointer;
     }
 
     .forgot-password {
@@ -211,16 +197,14 @@
   </style>
 </head>
 <body>
-   <div class="outer-box">
-    <div class="label">Log Sign Up</div>
-    <div class="inner-box">
-      <div class="image-container">
-        <img src="images/manper.webp" alt="Image">
-        <div class="text">
-         <h2>welcome back</h2>
-          <p>glad to see you again! access your <br> account to explore more</p>
-        </div>
+  <div class="inner-box">
+    <div class="image-container">
+      <img src="images/manper.webp" alt="Image">
+      <div class="text">
+        <h2>Welcome Back</h2>
+        <p>Glad to see you again! Access your account to explore more.</p>
       </div>
+    </div>
 
     <div class="right-box">
       <div class="social-buttons">
@@ -235,15 +219,10 @@
         <input type="text" placeholder="Enter your username">
       </div>
 
-     
-
-        <div class="form-group">
-          <i class="fa fa-lock"></i>
-          <input type="password" placeholder="Enter your password" />
-           <i class="fa fa-eye-slash fa-right" style="margin-left: 260px;"></i>
-        </div>
-
-      
+      <div class="form-group">
+        <i class="fa fa-lock"></i>
+        <input type="password" placeholder="Enter your password" />
+      </div>
 
       <div class="forgot-password">
         <a href="#">Forgot Password?</a>
@@ -258,5 +237,3 @@
   </div>
 </body>
 </html>
-
-
