@@ -15,7 +15,7 @@
       font-family: Arial, sans-serif;
     }
 
-    /* removed border & fixed width */
+    
     .page-border {
       width: 100%;
       margin: 0 auto;
@@ -171,12 +171,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 0.4s ease; /* smooth animation */
+  transition: all 0.4s ease; 
 }
 
 .product-image:hover {
-  border-top-left-radius: 0; /* reset */
-  border-bottom-right-radius: 0; /* reset */
+  border-top-left-radius: 0; 
+  border-bottom-right-radius: 0;
   border-top-right-radius: 100px; 
   border-bottom-left-radius: 100px;
 }
@@ -222,19 +222,19 @@
   margin-top: 10px;
   width: 330px;
   padding: 10px;
-  background-color: #003B49; /* Dark Blue */
+  background-color: #003B49; 
   color: white;
   border: none;
   border-radius: 6px;
   cursor: pointer;
   font-size: 15px;
-  transition: all 0.3s ease; /* Smooth hover */
+  transition: all 0.3s ease;
 }
 
 .product-btn:hover {
-  background-color: #005f73; /* Slightly lighter blue */
-  transform: scale(1.05);   /* Small zoom */
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* Glow effect */
+  background-color: #005f73; 
+  transform: scale(1.05);   
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2); 
 }
 
 
@@ -322,6 +322,20 @@
     .footer-right {
       white-space: nowrap;
     }
+    .nav-link {
+    color: black;          
+    text-decoration: none; 
+    font-weight: 500;      
+  }
+   .icon1 {
+    color: black;         
+    font-size: 24px;       
+    text-decoration: none; 
+  }
+
+  .icon1:hover {
+    color: gray;          
+  }
   </style>
 </head>
 <body>
@@ -330,17 +344,20 @@
       <h2>Fragranzia</h2>
       <div class="header-right">
         <ul class="list">
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html" class="nav-link">Home</a></li>
           <li style="color: #003B49;">Products</li>
-          <li>Gifting</li>
-            <li><a href="About.html">About</a></li>
+          <li class="nav-link">Gifting</li>
+            <li><a href="About.html" class="nav-link">About</a></li>
         </ul>
         <div class="search-box">
           <i class="fa fa-search"></i>
           <input type="text" placeholder="Search Here" />
         </div>
         <div class="icon-group">
-          <div class="icon1"><i class="fas fa-shopping-cart"></i></div>
+          <a href="cart1.html" class="icon1">
+  <i class="fas fa-shopping-cart"></i>
+</a>
+
           <div class="icon2"><i class="fas fa-bell"></i></div>
           <div class="icon3"><i class="fas fa-user"></i></div>
         </div>
