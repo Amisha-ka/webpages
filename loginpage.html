@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Log In</title>
+  <title>Login</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
   <style>
     * {
@@ -20,17 +20,16 @@
       background: #f9f9f9;
     }
 
-  .inner-box {
-  display: flex;
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-  overflow: hidden;
-  width: 1100px;     /* width is fine */
-  min-height: 580px; /* ⬅️ add more height */
-  max-width: 95%;  
-}
-
+    .inner-box {
+      display: flex;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      overflow: hidden;
+      width: 1100px;     /* ✅ same as signup */
+      min-height: 580px; /* ✅ same as signup */
+      max-width: 95%;
+    }
 
     .image-container {
       flex: 1;
@@ -80,18 +79,17 @@
       font-size: 14px;
       margin-top: 10px;
     }
-.right-box {
-  width: 600px;            /* more width */
-  min-height: 500px;       /* more height */
-  padding: 50px;           /* more padding inside */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background: #fff;
-  border-radius: 10px;     /* optional rounded edges */
-}
 
-
+    .right-box {
+      width: 600px;      /* ✅ same as signup */
+      min-height: 500px; /* ✅ same as signup */
+      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background: #fff;
+      border-radius: 10px;
+    }
 
     .social-buttons {
       display: flex;
@@ -162,15 +160,18 @@
       color: #777;
     }
 
-    .forgot-password {
-      text-align: right;
-      margin-bottom: 20px;
-      font-size: 13px;
+    .checkbox {
+      font-size: 12px;
+      margin-bottom: 15px;
     }
 
-    .forgot-password a {
-      text-decoration: none;
+    .checkbox input {
+      margin-right: 5px;
+    }
+
+    .checkbox a {
       color: #004080;
+      text-decoration: none;
     }
 
     .login-button {
@@ -182,6 +183,13 @@
       border-radius: 5px;
       font-weight: bold;
       cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .login-button:hover {
+      background-color: #06457a;
+      transform: scale(1.05);
+      box-shadow: 0px 4px 12px rgba(0,0,0,0.3);
     }
 
     .signup-link {
@@ -199,10 +207,10 @@
 <body>
   <div class="inner-box">
     <div class="image-container">
-      <img src="images/manper.webp" alt="Image">
+      <img src="perfume1.jpg" alt="Image">
       <div class="text">
-        <h2>Welcome Back</h2>
-        <p>Glad to see you again! Access your account to explore more.</p>
+        <h2>Welcome Back!</h2>
+        <p>Login to continue your fragrance journey with Fragranza.</p>
       </div>
     </div>
 
@@ -212,11 +220,11 @@
         <button><i class="fab fa-facebook-f"></i> Facebook</button>
       </div>
 
-      <div class="divider">Or sign in with email</div>
+      <div class="divider">Or login with email</div>
 
       <div class="form-group">
-        <i class="fa fa-user"></i>
-        <input type="text" placeholder="Enter your username">
+        <i class="fa fa-envelope"></i>
+        <input type="email" placeholder="Enter your E-Mail" />
       </div>
 
       <div class="form-group">
@@ -224,11 +232,12 @@
         <input type="password" placeholder="Enter your password" />
       </div>
 
-      <div class="forgot-password">
-        <a href="#">Forgot Password?</a>
+      <div class="checkbox">
+        <input type="checkbox" /> Remember me
+        <a href="#" style="float:right;">Forgot Password?</a>
       </div>
 
-      <button class="login-button">Log In</button>
+<a href="index.html" class="login-button">Login</a>
 
       <div class="signup-link">
         Don’t have an account? <a href="signup.html">Sign Up</a>
